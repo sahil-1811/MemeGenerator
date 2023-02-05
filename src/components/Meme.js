@@ -26,7 +26,6 @@ export default function Meme(){
                 randomImage:url
             }
         })
-
     }
 
     function handleChange(event){
@@ -36,8 +35,8 @@ export default function Meme(){
                 [name]:value
         })
         )
-
     }
+
     return (
         <main>
             <div className="form">
@@ -60,15 +59,12 @@ export default function Meme(){
                 <button className="form-button" onClick={getMeme}>
                     Get a new meme image 🖼
                 </button>
-
             </div>
             <div className="meme">
             <img src={meme.randomImage} alt=" " className="meme-image"></img>
             <h2 className="meme--text top"> {meme.topText}</h2>
             <h2 className="meme--text bottom"> {meme.bottomText}</h2>
-
             </div>
-           
         </main>
     )
 }
